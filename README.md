@@ -31,7 +31,7 @@ The links in the **[Contents](#contents)** section below go directly to the
   Error](https://github.com/hlpostman/ios_student_forum_writing_samples/blob/master/How%20to%20Identify%20and%20Resolve%20an%20Unusual%20Unrecognized%20Selector%20Error/answer.md)**  - This answer addresses a question about an unusual occurrence
    of the `unrecognized selector sent to instance` error message
 
- 3. **[How to Resolve a Couple Unknown Class Errors and a Classic Key
-  Value Coding-Compliance Error](https://github.com/hlpostman/ios_student_forum_writing_samples/blob/master/How%20to%20Resolve%20a%20Couple%20Unknown%20Class%20Errors%20and%20a%20Classic%20Key%20Value%20Coding-Compliant%20Error/answer.md)** -
+ 3. **[How to Resolve a Couple Unknown Class Errors and the Classic Key
+  Value Coding-Compliance Error](https://github.com/hlpostman/ios_student_forum_writing_samples/blob/master/How%20to%20Resolve%20a%20Couple%20Unknown%20Class%20Errors%20and%20the%20Classic%20Key%20Value%20Coding-Compliant%20Error/answer.md)** -
   This answer addresses a question raised
   by a typo in a class name
