@@ -76,6 +76,6 @@ Once you fix your BusinessCell error above, you'll notice that your tableview ro
 
 ![Screen Shot 2018-09-20 at 8.55.48 PM.png](https://i.imgur.com/6o4vFmh.png)
 
-We've got a bunch of posts about row height.  Here's one [answer](https://discussions.codepath.com/courses/ios_university/questions/image-loading-problem) that includes links to two more in-depth answers, and [here's one](http://discussions.codepath.com/courses/ios_university/questions/content-in-the-cell-aren-t-scaled-properly) linked to in that answer that I wrote and I know touches a little bit on how this relates to autolayout.
+We've got a bunch of posts about row height.  Here's one [answer](https://discussions.codepath.com/courses/ios_university/questions/image-loading-problem) that includes links to two more in-depth answers, and [here's one](https://github.com/hlpostman/ios_student_forum_writing_samples/blob/master/How%20to%20Resolve%20a%20Couple%20Unknown%20Class%20Errors%20and%20a%20Classic%20Key%20Value%20Coding-Compliant%20Error/answer.md) linked to in that answer that I wrote and I know touches a little bit on how this relates to autolayout.
 
 It is running though - nice work!!
