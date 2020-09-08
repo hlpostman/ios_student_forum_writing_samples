@@ -9,6 +9,8 @@ Any photos and steps would be great.
 
 # How to Resolve a Couple Unknown Class Errors and the Classic Key Value Coding-Compliant Error
 
+## Finding the Errors
+
 When I ran your app, it showed the launch screen successfully and then crashed, just like you said.  When it crashed, it did the following two things, which Xcode commonly does when the simulator can't execute a given instruction in your code:
 
 1. Opened the AppDelegate.swift file and showed a SIGABRT error.  This isn't very informative in our case.  Luckily this isn't the only thing Xcode provides for error info.
@@ -31,6 +33,8 @@ There are three errors:
 One good thing to understand about the simulator is that it prints errors as it encounters them, so the output in the console is chronological from top to bottom.  That means that the error at the top is the first error it encountered when it tried to run.  Then it tried to keep going, and it came across error 2 and printed a note about that in the console.  Finally it logged a third error to the console and that third error caused it to crash.  At this point it stopped printing anything to the console, because it wasn't running anymore - it said it was "Terminating app due to uncaught exception" and accordingly, it aborted and gave the "SIGABRT" message in the app delegate.  You can't see the end of the console output in the screenshot above because my mac screen is smallish, but that's what happened.  Here's a clip of the end of the output and the lldb it prints as its last goodbye:
 
 ![Screen Shot 2018-09-20 at 7.40.12 PM.png](https://i.imgur.com/PIvE2rE.png)
+
+## Fixing the Errors
 
 You might think we should start with the last error, since that seems to be the one that finally made it crash.  But sometimes starting with the earlier errors can clear up the issues it was having later in its run.  Let's look at the issues one by one, starting with the first.
 
