@@ -28,7 +28,7 @@ There are three errors:
 
 1. Unknown class BusinessCell in Interface Builder file
 2. Unknown class \_TtC4Yelp13Business_Cell in Interface Builder file
-3. \*\*\* Terminating app due to uncaught exception 'NSUnknownKeyException', reason: '[<UITableViewCell 0x7ffbb304f600> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key NameLabel.'
+3. Terminating app due to uncaught exception 'NSUnknownKeyException', reason: '[<UITableViewCell 0x7ffbb304f600> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key NameLabel.'
 
 One good thing to understand about the simulator is that it prints errors as it encounters them, so the output in the console is chronological from top to bottom.  That means that the error at the top is the first error it encountered when it tried to run.  Then it tried to keep going, and it came across error 2 and printed a note about that in the console.  Finally it logged a third error to the console and that third error caused it to crash.  At this point it stopped printing anything to the console, because it wasn't running anymore - it said it was "Terminating app due to uncaught exception" and accordingly, it aborted and gave the "SIGABRT" message in the app delegate.  You can't see the end of the console output in the screenshot above because my mac screen is smallish, but that's what happened.  Here's a clip of the end of the output and the lldb it prints as its last goodbye:
 
@@ -61,9 +61,9 @@ The app runs!  Oddly enough, the error "Unknown class BusinessCell in Interface 
 Magically disappeared when we cleared up the first issue!
 
 
-### 3. \*\*\* Terminating app due to uncaught exception 'NSUnknownKeyException', reason: '[<UITableViewCell 0x7ffbb304f600> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key NameLabel.'
+### 3. Terminating app due to uncaught exception 'NSUnknownKeyException', reason: '[<UITableViewCell 0x7ffbb304f600> setValue:forUndefinedKey:]: this class is not key value coding-compliant for the key NameLabel.'
 
-Magically disappeared when we cleared up the first issue!  This was happening basically because xcode didn't know what the `NameLabel` attribute was since it was using "Business_Cell" which didn't exist and therefore didn't have any attributes like `NameLabel` or anything else for that matter.  But sometimes this error can happen when you've got a broken outlet.  There's a CodePath guide to [Common Issues](https://guides.codepath.com/ios/Common-Issues) and it has a concise solution for the issue ["this class is not key value coding-compliant"](https://guides.codepath.com/ios/Common-Issues#2-error-this-class-is-not-key-value-coding-compliant-for-the-key) if you want to learn how to fix that for the future.
+Magically disappeared when we cleared up the first issue!  This was happening basically because Xcode didn't know what the `NameLabel` attribute was since it was using "Business_Cell" which didn't exist and therefore didn't have any attributes like `NameLabel` or anything else for that matter.  But sometimes this error can happen when you've got a broken outlet.  There's a CodePath guide to [Common Issues](https://guides.codepath.com/ios/Common-Issues) and it has a concise solution for the issue ["this class is not key value coding-compliant"](https://guides.codepath.com/ios/Common-Issues#2-error-this-class-is-not-key-value-coding-compliant-for-the-key) if you want to learn how to fix that for the future.
 
 
 ----
