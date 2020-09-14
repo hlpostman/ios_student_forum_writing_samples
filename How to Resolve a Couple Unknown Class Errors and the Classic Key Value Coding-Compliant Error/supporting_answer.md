@@ -13,7 +13,7 @@ The original question and brief comment thread are reproduced below.  I replaced
 >
 > **Student:**  Thank you so much Hannah.  Sorry for the late response.
 
-# Answer
+# Setting Table View Cell Row Height without AutoLayout and a Note on Multiline Text Labels
 
 If you're not using AutoLayout, you need to set the `height` property of your table view statically in the view controller that manages the table view.    Currently, the view controller you have managing the main movies table view sets the height like this, on lines 43 and 44:
 
